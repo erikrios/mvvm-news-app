@@ -37,4 +37,8 @@ dependencies {
 
     // Architectural Components
     implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.0-alpha02'
+
+    // Room
+    implementation 'androidx.room:room-runtime:2.2.5'
+    kapt 'androidx.room:room-ktx:2.2.5'
 }
