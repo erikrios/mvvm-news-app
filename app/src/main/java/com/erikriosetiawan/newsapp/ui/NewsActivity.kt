@@ -1,9 +1,10 @@
-package com.erikriosetiawan.newsapp
+package com.erikriosetiawan.newsapp.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.ui.setupWithNavController
+import com.erikriosetiawan.newsapp.R
 import kotlinx.android.synthetic.main.activity_news.*
 
 class NewsActivity : AppCompatActivity() {
