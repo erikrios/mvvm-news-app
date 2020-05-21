@@ -1,6 +1,6 @@
 package com.erikriosetiawan.newsapp.api
 
-import com.erikriosetiawan.newsapp.NewsResponse
+import com.erikriosetiawan.newsapp.models.NewsResponse
 import com.erikriosetiawan.newsapp.util.Constants.Companion.API_KEY
 import retrofit2.Response
 import retrofit2.http.GET

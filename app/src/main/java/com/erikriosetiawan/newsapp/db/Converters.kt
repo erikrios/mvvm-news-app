@@ -1,7 +1,7 @@
 package com.erikriosetiawan.newsapp.db
 
 import androidx.room.TypeConverter
-import com.erikriosetiawan.newsapp.Source
+import com.erikriosetiawan.newsapp.models.Source
 
 class Converters {
 

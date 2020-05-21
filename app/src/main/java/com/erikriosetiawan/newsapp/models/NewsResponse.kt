@@ -1,6 +1,6 @@
-package com.erikriosetiawan.newsapp
+package com.erikriosetiawan.newsapp.models
 
-import com.erikriosetiawan.newsapp.Article
+import com.erikriosetiawan.newsapp.models.Article
 
 data class NewsResponse(
     val articles: List<Article>,
