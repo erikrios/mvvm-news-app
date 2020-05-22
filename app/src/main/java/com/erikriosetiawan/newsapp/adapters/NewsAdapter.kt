@@ -1,6 +1,7 @@
 package com.erikriosetiawan.newsapp.adapters
 
 import android.view.View
+import androidx.recyclerview.widget.AsyncListDiffer
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.erikriosetiawan.newsapp.models.Article
@@ -18,7 +19,9 @@ class NewsAdapter : RecyclerView.Adapter<NewsAdapter.ArticleViewHolder>() {
         }
 
         override fun areContentsTheSame(oldItem: Article, newItem: Article): Boolean {
-            oldItem == newItem
+            return oldItem == newItem
         }
     }
+
+    val differ = AsyncListDiffer(this, differCallback)
 }
