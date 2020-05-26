@@ -1,7 +1,5 @@
 package com.erikriosetiawan.newsapp.util
 
-import java.lang.RuntimeException
-
 sealed class Resource<T>(
     val data: T? = null,
     val message: String? = null
