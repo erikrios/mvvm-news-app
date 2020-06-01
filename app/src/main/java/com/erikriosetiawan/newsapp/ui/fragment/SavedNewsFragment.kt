@@ -3,6 +3,7 @@ package com.erikriosetiawan.newsapp.ui.fragment
 import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.Fragment
+import androidx.lifecycle.Observer
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.erikriosetiawan.newsapp.R
@@ -30,6 +31,10 @@ class SavedNewsFragment : Fragment(R.layout.fragment_saved_news) {
                 bundle
             )
         }
+
+        viewModel.getSavedNews().observe(viewLifecycleOwner, Observer { articles ->
+            newsAdapter.differ.submitList(articles)
+        })
     }
 
     private fun setUpRecyclerView() {
