@@ -17,9 +17,7 @@ import com.erikriosetiawan.newsapp.ui.NewsViewModel
 import com.erikriosetiawan.newsapp.util.Constants
 import com.erikriosetiawan.newsapp.util.Constants.Companion.SEARCH_NEWS_TIME_DELAY
 import com.erikriosetiawan.newsapp.util.Resource
-import kotlinx.android.synthetic.main.fragment_breaking_news.*
 import kotlinx.android.synthetic.main.fragment_search_news.*
-import kotlinx.android.synthetic.main.fragment_search_news.paginationProgressBar
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.MainScope
 import kotlinx.coroutines.delay
