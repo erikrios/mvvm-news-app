@@ -1,7 +1,8 @@
 package com.erikriosetiawan.newsapp.ui
 
+import android.app.Application
+import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.MutableLiveData
-import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.erikriosetiawan.newsapp.models.Article
 import com.erikriosetiawan.newsapp.models.NewsResponse
@@ -10,7 +11,7 @@ import com.erikriosetiawan.newsapp.util.Resource
 import kotlinx.coroutines.launch
 import retrofit2.Response
 
-class NewsViewModel(val newsRepository: NewsRepository) : ViewModel() {
+class NewsViewModel(app: Application, val newsRepository: NewsRepository) : AndroidViewModel(app) {
 
     val breakingNews: MutableLiveData<Resource<NewsResponse>> = MutableLiveData()
     var breakingNewsPage = 1
