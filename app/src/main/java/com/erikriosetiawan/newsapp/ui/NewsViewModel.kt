@@ -16,7 +16,6 @@ import com.erikriosetiawan.newsapp.repository.NewsRepository
 import com.erikriosetiawan.newsapp.util.Resource
 import kotlinx.coroutines.launch
 import retrofit2.Response
-import java.io.IOError
 import java.io.IOException
 
 class NewsViewModel(app: Application, val newsRepository: NewsRepository) : AndroidViewModel(app) {
