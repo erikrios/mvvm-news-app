@@ -1,7 +1,6 @@
 package com.erikriosetiawan.newsapp.ui.fragment
 
 import android.os.Bundle
-import android.util.Log
 import android.view.View
 import android.widget.AbsListView
 import android.widget.Toast
