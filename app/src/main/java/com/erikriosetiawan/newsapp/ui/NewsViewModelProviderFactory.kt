@@ -3,7 +3,6 @@ package com.erikriosetiawan.newsapp.ui
 import android.app.Application
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-import com.erikriosetiawan.newsapp.NewsApplication
 import com.erikriosetiawan.newsapp.repository.NewsRepository
 
 @Suppress("UNCHECKED_CAST")
