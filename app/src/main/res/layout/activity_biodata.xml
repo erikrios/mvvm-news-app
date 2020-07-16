@@ -111,6 +111,7 @@
                     android:clickable="true"
                     android:focusable="true"
                     android:gravity="center_vertical"
+                    android:onClick="openGithub"
                     android:text="@string/github_url"
                     android:textColor="@android:color/holo_blue_dark" />
 
@@ -170,6 +171,7 @@
                     android:clickable="true"
                     android:focusable="true"
                     android:gravity="center_vertical"
+                    android:onClick="openLinkedIn"
                     android:text="@string/linkedin_url"
                     android:textColor="@android:color/holo_blue_dark" />
 
@@ -229,6 +231,7 @@
                     android:clickable="true"
                     android:focusable="true"
                     android:gravity="center_vertical"
+                    android:onClick="openFacebook"
                     android:text="@string/facebook_url"
                     android:textColor="@android:color/holo_blue_dark" />
 
@@ -288,6 +291,7 @@
                     android:clickable="true"
                     android:focusable="true"
                     android:gravity="center_vertical"
+                    android:onClick="openInstagram"
                     android:text="@string/instagram_url"
                     android:textColor="@android:color/holo_blue_dark" />
 
