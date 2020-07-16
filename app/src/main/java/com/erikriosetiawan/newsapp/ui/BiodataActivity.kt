@@ -6,42 +6,31 @@ import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import com.erikriosetiawan.newsapp.R
-import com.erikriosetiawan.newsapp.util.SocialMedia
-import com.erikriosetiawan.newsapp.util.SocialMediaHelper
 
-class BiodataActivity : AppCompatActivity(), View.OnClickListener {
+class BiodataActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_biodata)
     }
 
-    override fun onClick(v: View?) {
-        when (v?.id) {
-            SocialMediaHelper.getId(SocialMedia.GITHUB) -> openUrl(
-                SocialMediaHelper.getLink(
-                    SocialMedia.GITHUB
-                )
-            )
-            SocialMediaHelper.getId(SocialMedia.LINKED_IN) -> openUrl(
-                SocialMediaHelper.getLink(
-                    SocialMedia.LINKED_IN
-                )
-            )
-            SocialMediaHelper.getId(SocialMedia.FACEBOOK) -> openUrl(
-                SocialMediaHelper.getLink(
-                    SocialMedia.FACEBOOK
-                )
-            )
-            SocialMediaHelper.getId(SocialMedia.INSTAGRAM) -> openUrl(
-                SocialMediaHelper.getLink(
-                    SocialMedia.INSTAGRAM
-                )
-            )
-        }
-    }
-
     private fun openUrl(url: String) {
         val intent = Intent(Intent.ACTION_VIEW, Uri.parse(url))
         startActivity(intent)
+    }
+
+    fun openGithub(view: View) {
+        openUrl(getString(R.string.github_url))
+    }
+
+    fun openLinkedIn(view: View) {
+        openUrl(getString(R.string.linkedin_url))
+    }
+
+    fun openFacebook(view: View) {
+        openUrl(getString(R.string.facebook_url))
+    }
+
+    fun openInstagram(view: View) {
+        openUrl(getString(R.string.instagram_url))
     }
 }
