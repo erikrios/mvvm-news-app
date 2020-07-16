@@ -103,6 +103,7 @@
                     android:text="@string/github" />
 
                 <TextView
+                    android:id="@+id/tvGithub"
                     style="@style/TextAppearance.AppCompat.Medium"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
@@ -161,6 +162,7 @@
                     android:text="@string/linkedin" />
 
                 <TextView
+                    android:id="@+id/tvLinkedIn"
                     style="@style/TextAppearance.AppCompat.Medium"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
@@ -219,6 +221,7 @@
                     android:text="@string/facebook" />
 
                 <TextView
+                    android:id="@+id/tvFacebook"
                     style="@style/TextAppearance.AppCompat.Medium"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
@@ -277,6 +280,7 @@
                     android:text="@string/instagram" />
 
                 <TextView
+                    android:id="@+id/tvInstagram"
                     style="@style/TextAppearance.AppCompat.Medium"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
